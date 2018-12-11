@@ -1,8 +1,13 @@
-//let deliLine = [];
-
 const takeANumber = (deliLine, newPerson) => {
   deliLine.push(newPerson);
   return `Welcome, ${newPerson}. You are number ${deliLine.length} in line.`
+}
+
+let n = 0;
+
+const youAreNumber = (deliLine) => {
+  deliLine.push(++n);
+  return `You are number ${n}`
 }
 
 const nowServing = (deliLine) => {
